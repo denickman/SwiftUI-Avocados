@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kWR-Ff-ppa">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-dB-eSF">
+                                <rect key="frame" x="-245" y="271" width="883" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="ltu-vE-2Zx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avocados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt7-ZX-hur">
+                                <rect key="frame" x="87" y="548" width="219" height="55"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lt7-ZX-hur" firstAttribute="top" secondItem="fU1-dB-eSF" secondAttribute="bottom" constant="37" id="DIn-uD-SAt"/>
+                            <constraint firstItem="kWR-Ff-ppa" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="L2g-i5-jXl"/>
+                            <constraint firstItem="fU1-dB-eSF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-35" id="T1F-H5-9nK"/>
+                            <constraint firstItem="fU1-dB-eSF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dE7-cF-Jbs"/>
+                            <constraint firstItem="kWR-Ff-ppa" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="eao-Hx-PWD"/>
+                            <constraint firstItem="kWR-Ff-ppa" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="eeP-4g-afd"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="kWR-Ff-ppa" secondAttribute="bottom" id="fTc-o8-1GR"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="kWR-Ff-ppa" secondAttribute="trailing" id="gkz-dt-DeW"/>
+                            <constraint firstItem="kWR-Ff-ppa" firstAttribute="bottom" secondItem="Bcu-3y-fUS" secondAttribute="bottom" id="k0x-88-bG6"/>
+                            <constraint firstItem="Lt7-ZX-hur" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="s6j-7G-uRF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avocado" width="883" height="862"/>
+        <image name="background" width="1194" height="834"/>
+    </resources>
+</document>
